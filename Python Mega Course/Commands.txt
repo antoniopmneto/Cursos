@@ -1,0 +1,23 @@
+import os
+os.listdir() -> "Listar os diretórios no local"
+
+import pandas
+pandas.read_csv("") .read_json -> "Ler os arquivos"
+
+list = df.loc[:,'Name'] -> "Cria lista a partir de uma coluna chamada 'Name' [Linhas:Coluna]
+
+df.iloc[1:5, 1:5] -> "Lista os elementos da Linha 1 até 5, da coluna 1 até a coluna 5"
+
+import geopy
+dir(geopy) -> "Lista os métodos da biblioteca geopy"
+
+from geopy.geocoders import Nominatin
+
+nom = Nominatin(user_agent="projeto")
+nom.geocode("Endereço") -> "Inicia uma conexão Nominatin e busca as informações sobre o endereço"
+
+data["Coordinates"]=data["Address"].apply(nom1.geocode) -> Nova coluna de coordenadas com base nas info da coluna "Address" 
+
+data["Latitude"]=data["Coordinates"].apply(lambda x: x.latitude if x!= None else None)
+data["Longitude"]=data["Coordinates"].apply(lambda x: x.longitude if x != None else None)
+
